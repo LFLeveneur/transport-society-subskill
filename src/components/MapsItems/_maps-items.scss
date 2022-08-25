@@ -1,0 +1,29 @@
+.maps-items:first-child {
+    background-color: $secondary-color-GL;
+    cursor: inherit;
+}
+
+.maps-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.5rem;
+    padding-right: 4.25rem;
+    position: relative;
+    background-color: $primary-color-W;
+    cursor: pointer;
+
+    span {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+.maps-arrow {
+    position: absolute;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 1.5rem;
+}

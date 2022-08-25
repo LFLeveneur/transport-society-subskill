@@ -1,0 +1,47 @@
+// --------------------------------------------------------------
+// Map
+// --------------------------------------------------------------
+
+.maps {
+    width: 100%;
+    position: relative;
+
+}
+
+.maps-content {
+    background-color: $secondary-color-GL;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin: 3.125rem;
+}
+
+.google-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media ($media-sm) {
+    .maps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: initial;
+    }
+    .maps-content {
+        margin: 0;
+        
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .google-map {
+        width: 100%;
+        height: auto;
+        position: initial;
+    }
+}

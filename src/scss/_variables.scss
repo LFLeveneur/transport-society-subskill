@@ -1,0 +1,33 @@
+// --------------------------------------------------------------
+// Typography
+// --------------------------------------------------------------
+
+// Fonts
+$poppins: 'Poppins', sans-serif;
+
+// --------------------------------------------------------------
+// Colors
+// --------------------------------------------------------------
+
+// Primary color
+$primary-color: #039F4E;
+$primary-color-W: #FFFFFF;
+$primary-color-B: #000000;
+
+// Secondary color
+$secondary-color-BL: #0A0A0A;
+$secondary-color-GD: #393939;
+$secondary-color-GM: #7B7D7C;
+$secondary-color-GR: #A5A5A5;
+$secondary-color-GL: #F3F3F3;
+$secondary-color-W: #F7FCF9;
+$secondary-color-shadow: rgba(221, 221, 221, 0.5);
+
+// --------------------------------------------------------------
+// Media queries
+// --------------------------------------------------------------
+
+$media-xs: screen and (max-width: 768px); // Extra small devices, phones (portrait)
+$media-sm: screen and (min-width: 768px) and (max-width: 991px); // Small devices, tablets (landscape)
+$media-md: screen and (min-width: 992px) and (max-width: 1199px); // Medium devices, laptops (landscape)
+$media-lg: screen and (min-width: 1200px); // Large devices, laptops (lanscape)

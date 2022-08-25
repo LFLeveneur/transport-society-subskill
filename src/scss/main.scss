@@ -1,0 +1,26 @@
+// Config
+@import 'typography';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+
+// Pages
+@import '../pages/home';
+
+@import '../components/Banner/banner';
+@import '../components/OurVehicules/our-vehicules';
+@import '../components/About/about';
+@import '../components/RefrigerationSpecialist/refrigeration-specialist';
+@import '../components/FullService/_full-service';
+@import '../components/Contact/contact';
+@import '../components/Maps/maps';
+
+
+// Components
+@import '../components/Navigator/navigator';
+@import '../components/Footer/footer';
+
+@import '../components/CardTruck/card-truck';
+@import '../components/FormRadio/form-radio';
+@import '../components/FormInput/form-input';
+@import '../components/MapsItems/maps-items';

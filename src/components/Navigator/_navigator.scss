@@ -1,0 +1,122 @@
+.navigator {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.125rem;
+    background-color: $primary-color-W;
+    color: $primary-color-B;
+    position: fixed;
+    z-index: 999;
+}
+
+.navigator-logo {
+    display: flex;
+    flex-direction: column;
+    span {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+}
+
+.navigator-toogle {
+    display: none;
+    font-size: 3.125rem;
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+
+.navigator-nav {
+    width: 100%;
+}
+
+.navigator-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.125rem;
+    width: 100%;
+}
+
+.navigator-item {
+    a {
+        font-size: 1rem;
+        font-weight: 600;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $primary-color;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: -4px;
+                background-color: $primary-color;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.navigator-country {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigator-select {
+    appearance: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+// --------------------------------------------------------------
+// Media queries
+// --------------------------------------------------------------
+
+@media ($media-xs) {
+    .navigator {
+        position: fixed;
+        padding: 1.5rem;
+    }
+
+    .navigator-toogle {
+        display: block;
+    }
+
+    .navigator-nav.open {
+        right: 0 !important;
+    }
+
+    .navigator-nav {
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        top: 0;
+        right: -100vh;
+        padding: 3.125rem;
+        background-color: $secondary-color-GL;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navigator-list {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}

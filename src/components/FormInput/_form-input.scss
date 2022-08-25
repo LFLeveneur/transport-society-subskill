@@ -1,0 +1,18 @@
+.form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.125rem;
+
+    input {
+        width: 100%;
+        border: none;
+        border-bottom: 0.125rem solid $secondary-color-GR;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
